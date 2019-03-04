@@ -19,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Kz9-Lu-D8e">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accounts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xh-Cn-oTK">
-                                <rect key="frame" x="16" y="278" width="343" height="80"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="55"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -30,14 +30,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Kz9-Lu-D8e" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="4yr-Mo-Ivz"/>
-                            <constraint firstAttribute="trailing" secondItem="Kz9-Lu-D8e" secondAttribute="trailing" id="F0I-ei-B1t"/>
-                            <constraint firstItem="Kz9-Lu-D8e" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="QVL-qV-VcT"/>
-                            <constraint firstItem="0xh-Cn-oTK" firstAttribute="centerX" secondItem="Kz9-Lu-D8e" secondAttribute="centerX" id="SJL-Mp-xf7"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0xh-Cn-oTK" secondAttribute="bottom" constant="309" id="Vyq-KA-G1s"/>
-                            <constraint firstItem="0xh-Cn-oTK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="258" id="eK5-ww-IGD"/>
-                            <constraint firstItem="0xh-Cn-oTK" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="kNi-0z-uFM"/>
-                            <constraint firstItem="Kz9-Lu-D8e" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="xu3-cS-ulq"/>
+                            <constraint firstItem="Kz9-Lu-D8e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Exs-jf-CCB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0xh-Cn-oTK" secondAttribute="trailing" id="R4E-OI-ktx"/>
+                            <constraint firstAttribute="bottom" secondItem="0xh-Cn-oTK" secondAttribute="bottom" id="emA-PA-xhI"/>
+                            <constraint firstItem="Kz9-Lu-D8e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="goU-Z3-rHr"/>
+                            <constraint firstItem="Kz9-Lu-D8e" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="h5U-QD-td6"/>
+                            <constraint firstItem="0xh-Cn-oTK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="j5z-ZJ-VQQ"/>
+                            <constraint firstItem="Kz9-Lu-D8e" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kdB-li-uUb"/>
+                            <constraint firstItem="0xh-Cn-oTK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oht-Nb-9Tz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
