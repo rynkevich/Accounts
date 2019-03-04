@@ -32,28 +32,41 @@ class CreateAccountViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        initAvatarImageView()
+        initBioTextView()
+        initDateOfBirthPicker()
+        initGenderPickerView()
+        
+        let viewTappedGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.viewTapped))
+        view.addGestureRecognizer(viewTappedGestureRecognizer);
+    }
+    
+    func initAvatarImageView() {
         avatarImageView.image = UIImage(named: "NoImageAvailable")
         avatarImageView.layer.borderColor = borderColor.cgColor
         avatarImageView.layer.borderWidth = 0.5
         avatarImageView.layer.cornerRadius = 5
-        
+    }
+    
+    func initBioTextView() {
         bioTextView.layer.borderColor = borderColor.cgColor
         bioTextView.layer.borderWidth = 0.5
         bioTextView.layer.cornerRadius = 5
-        
+    }
+    
+    func initDateOfBirthPicker() {
         dateOfBirthPicker = UIDatePicker()
         dateOfBirthPicker?.datePickerMode = .date
         dateOfBirthPicker?.maximumDate = Date()
         dateOfBirthPicker?.addTarget(self, action: #selector(self.dateOfBirthChanged), for: .valueChanged)
         dateOfBirthField.inputView = dateOfBirthPicker
-        
+    }
+    
+    func initGenderPickerView() {
         genderPickerView = UIPickerView()
         genderPickerView?.dataSource = self
         genderPickerView?.delegate = self
         genderField.inputView = genderPickerView
-        
-        let viewTappedGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.viewTapped))
-        view.addGestureRecognizer(viewTappedGestureRecognizer);
     }
     
     @objc func dateOfBirthChanged(datePicker: UIDatePicker) {
