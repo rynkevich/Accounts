@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5C11B256222C67BD0053839B /* AccountListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C11B255222C67BD0053839B /* AccountListViewController.swift */; };
+		5C11B25B222C86110053839B /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C11B25A222C86110053839B /* SignInViewController.swift */; };
+		5C5331F5222C973C0056A7A6 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5331F4222C973C0056A7A6 /* UIViewController.swift */; };
 		5C749FD6222C011300E470EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C749FD5222C011300E470EC /* AppDelegate.swift */; };
 		5C749FD8222C011300E470EC /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C749FD7222C011300E470EC /* CreateAccountViewController.swift */; };
 		5C749FDB222C011300E470EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C749FD9222C011300E470EC /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 
 /* Begin PBXFileReference section */
 		5C11B255222C67BD0053839B /* AccountListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListViewController.swift; sourceTree = "<group>"; };
+		5C11B25A222C86110053839B /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		5C5331F4222C973C0056A7A6 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		5C749FD2222C011300E470EC /* AccountList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccountList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C749FD5222C011300E470EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C749FD7222C011300E470EC /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
@@ -40,8 +44,10 @@
 		5C11B251222C35500053839B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				5C5331F6222C9ABA0056A7A6 /* Extensions */,
 				5C749FD7222C011300E470EC /* CreateAccountViewController.swift */,
 				5C11B255222C67BD0053839B /* AccountListViewController.swift */,
+				5C11B25A222C86110053839B /* SignInViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -69,6 +75,14 @@
 				5C749FDE222C011400E470EC /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5C5331F6222C9ABA0056A7A6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5C5331F4222C973C0056A7A6 /* UIViewController.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		5C749FC9222C011300E470EC = {
@@ -170,9 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C11B25B222C86110053839B /* SignInViewController.swift in Sources */,
 				5C749FD8222C011300E470EC /* CreateAccountViewController.swift in Sources */,
 				5C749FD6222C011300E470EC /* AppDelegate.swift in Sources */,
 				5C11B256222C67BD0053839B /* AccountListViewController.swift in Sources */,
+				5C5331F5222C973C0056A7A6 /* UIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +335,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YDTQ63V5AL;
 				INFOPLIST_FILE = AccountList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -336,6 +353,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YDTQ63V5AL;
 				INFOPLIST_FILE = AccountList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
