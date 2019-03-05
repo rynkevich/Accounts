@@ -7,7 +7,6 @@ class CreateAccountViewController: UIViewController {
     @IBOutlet weak var bioTextView: UITextView!
     @IBOutlet weak var avatarImageView: UIImageView!
     
-    let borderColor = UIColor(red: 186/255, green: 186/255, blue: 186/255, alpha: 1.0)
     let genderList = ["Male", "Female"]
     
     let dateFormatter: DateFormatter
@@ -34,14 +33,16 @@ class CreateAccountViewController: UIViewController {
     }
     
     func initAvatarImageView() {
-        avatarImageView.image = UIImage(named: "NoImageAvailable")
-        avatarImageView.layer.borderColor = borderColor.cgColor
-        avatarImageView.layer.borderWidth = 0.5
+        avatarImageView.layer.borderColor = UIColor.white.cgColor
+        avatarImageView.layer.borderWidth = 1
         avatarImageView.layer.cornerRadius = 5
     }
     
     func initBioTextView() {
-        bioTextView.layer.borderColor = borderColor.cgColor
+        bioTextView.layer.borderColor = UIColor(red: 186/255,
+                                                green: 186/255,
+                                                blue: 186/255,
+                                                alpha: 1.0).cgColor
         bioTextView.layer.borderWidth = 0.5
         bioTextView.layer.cornerRadius = 5
     }

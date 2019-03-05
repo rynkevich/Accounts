@@ -10,6 +10,7 @@
 		5C11B256222C67BD0053839B /* AccountListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C11B255222C67BD0053839B /* AccountListViewController.swift */; };
 		5C11B25B222C86110053839B /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C11B25A222C86110053839B /* SignInViewController.swift */; };
 		5C41F7A6222D2A2D00EA5346 /* GradientBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41F7A5222D2A2D00EA5346 /* GradientBackgroundView.swift */; };
+		5C41F7AA222D30A900EA5346 /* AccountPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41F7A9222D30A900EA5346 /* AccountPageViewController.swift */; };
 		5C749FD6222C011300E470EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C749FD5222C011300E470EC /* AppDelegate.swift */; };
 		5C749FD8222C011300E470EC /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C749FD7222C011300E470EC /* CreateAccountViewController.swift */; };
 		5C749FDB222C011300E470EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C749FD9222C011300E470EC /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		5C11B255222C67BD0053839B /* AccountListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListViewController.swift; sourceTree = "<group>"; };
 		5C11B25A222C86110053839B /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		5C41F7A5222D2A2D00EA5346 /* GradientBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackgroundView.swift; sourceTree = "<group>"; };
+		5C41F7A9222D30A900EA5346 /* AccountPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountPageViewController.swift; sourceTree = "<group>"; };
 		5C749FD2222C011300E470EC /* AccountList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccountList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C749FD5222C011300E470EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C749FD7222C011300E470EC /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +46,7 @@
 		5C11B251222C35500053839B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				5C41F7A9222D30A900EA5346 /* AccountPageViewController.swift */,
 				5C749FD7222C011300E470EC /* CreateAccountViewController.swift */,
 				5C11B255222C67BD0053839B /* AccountListViewController.swift */,
 				5C11B25A222C86110053839B /* SignInViewController.swift */,
@@ -189,6 +192,7 @@
 				5C749FD8222C011300E470EC /* CreateAccountViewController.swift in Sources */,
 				5C749FD6222C011300E470EC /* AppDelegate.swift in Sources */,
 				5C11B256222C67BD0053839B /* AccountListViewController.swift in Sources */,
+				5C41F7AA222D30A900EA5346 /* AccountPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
