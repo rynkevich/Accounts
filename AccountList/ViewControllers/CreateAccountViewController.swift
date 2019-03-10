@@ -202,7 +202,9 @@ class CreateAccountViewController: UIViewController {
         account.dateOfBirth = dateOfBirthPicker.date
         account.country = countryField.text
         account.biography = bioTextView.text!.isEmpty ? nil : bioTextView.text
-        account.avatar = avatarButton.image(for: .normal)!.pngData()
+        account.avatar = avatarButton.image(for: .normal) != UIImage(named: "NoImage")
+            ? avatarButton.image(for: .normal)!.pngData()
+            : nil
     }
     
     private func setFields(toAccountData account: AccountManagedObject) {
