@@ -60,6 +60,7 @@ class CreateAccountViewController: UIViewController {
     
     @IBAction func avatarButtonTapped(_ sender: Any) {
         let imagePickerController = UIImagePickerController()
+        imagePickerController.modalPresentationStyle = .overCurrentContext
         imagePickerController.delegate = self
         imagePickerController.sourceType = .photoLibrary
         imagePickerController.allowsEditing = false
