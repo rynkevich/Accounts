@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		5C11B256222C67BD0053839B /* AccountListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C11B255222C67BD0053839B /* AccountListViewController.swift */; };
 		5C11B25B222C86110053839B /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C11B25A222C86110053839B /* SignInViewController.swift */; };
+		5C2B1AFD223139F100983C11 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2B1AFC223139F100983C11 /* AccountManager.swift */; };
+		5C3037962234804B000FA38A /* AccountValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3037952234804B000FA38A /* AccountValidator.swift */; };
+		5C30379822348891000FA38A /* ErrorAlertFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C30379722348891000FA38A /* ErrorAlertFactory.swift */; };
 		5C41F7A6222D2A2D00EA5346 /* GradientBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41F7A5222D2A2D00EA5346 /* GradientBackgroundView.swift */; };
 		5C41F7AA222D30A900EA5346 /* AccountPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41F7A9222D30A900EA5346 /* AccountPageViewController.swift */; };
 		5C749FD6222C011300E470EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C749FD5222C011300E470EC /* AppDelegate.swift */; };
@@ -16,11 +19,15 @@
 		5C749FDB222C011300E470EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C749FD9222C011300E470EC /* Main.storyboard */; };
 		5C749FDD222C011400E470EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C749FDC222C011400E470EC /* Assets.xcassets */; };
 		5C749FE0222C011400E470EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C749FDE222C011400E470EC /* LaunchScreen.storyboard */; };
+		5CBD3F03222F2E63005BABD7 /* AccountsData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5CBD3F01222F2E63005BABD7 /* AccountsData.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5C11B255222C67BD0053839B /* AccountListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListViewController.swift; sourceTree = "<group>"; };
 		5C11B25A222C86110053839B /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		5C2B1AFC223139F100983C11 /* AccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
+		5C3037952234804B000FA38A /* AccountValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountValidator.swift; sourceTree = "<group>"; };
+		5C30379722348891000FA38A /* ErrorAlertFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorAlertFactory.swift; sourceTree = "<group>"; };
 		5C41F7A5222D2A2D00EA5346 /* GradientBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackgroundView.swift; sourceTree = "<group>"; };
 		5C41F7A9222D30A900EA5346 /* AccountPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountPageViewController.swift; sourceTree = "<group>"; };
 		5C749FD2222C011300E470EC /* AccountList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccountList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,6 +37,7 @@
 		5C749FDC222C011400E470EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C749FDF222C011400E470EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C749FE1222C011400E470EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CBD3F02222F2E63005BABD7 /* AccountsData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AccountsData.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,17 +56,10 @@
 			children = (
 				5C41F7A9222D30A900EA5346 /* AccountPageViewController.swift */,
 				5C749FD7222C011300E470EC /* CreateAccountViewController.swift */,
-				5C11B255222C67BD0053839B /* AccountListViewController.swift */,
 				5C11B25A222C86110053839B /* SignInViewController.swift */,
+				5C11B255222C67BD0053839B /* AccountListViewController.swift */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		5C11B252222C35BE0053839B /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		5C11B253222C36BD0053839B /* Resources */ = {
@@ -77,6 +78,23 @@
 				5C749FDE222C011400E470EC /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5C2B1AFB2231396700983C11 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5C2B1AFC223139F100983C11 /* AccountManager.swift */,
+				5C30379722348891000FA38A /* ErrorAlertFactory.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		5C30379422348031000FA38A /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				5C3037952234804B000FA38A /* AccountValidator.swift */,
+			);
+			path = Validation;
 			sourceTree = "<group>";
 		};
 		5C41F7A4222D299100EA5346 /* Views */ = {
@@ -106,10 +124,12 @@
 		5C749FD4222C011300E470EC /* AccountList */ = {
 			isa = PBXGroup;
 			children = (
+				5C30379422348031000FA38A /* Validation */,
+				5C2B1AFB2231396700983C11 /* Utilities */,
 				5C41F7A4222D299100EA5346 /* Views */,
 				5C11B253222C36BD0053839B /* Resources */,
-				5C11B252222C35BE0053839B /* Models */,
 				5C11B251222C35500053839B /* ViewControllers */,
+				5CBD3F01222F2E63005BABD7 /* AccountsData.xcdatamodeld */,
 				5C749FD5222C011300E470EC /* AppDelegate.swift */,
 				5C749FE1222C011400E470EC /* Info.plist */,
 			);
@@ -188,11 +208,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C41F7A6222D2A2D00EA5346 /* GradientBackgroundView.swift in Sources */,
+				5CBD3F03222F2E63005BABD7 /* AccountsData.xcdatamodeld in Sources */,
 				5C11B25B222C86110053839B /* SignInViewController.swift in Sources */,
 				5C749FD8222C011300E470EC /* CreateAccountViewController.swift in Sources */,
+				5C30379822348891000FA38A /* ErrorAlertFactory.swift in Sources */,
+				5C3037962234804B000FA38A /* AccountValidator.swift in Sources */,
 				5C749FD6222C011300E470EC /* AppDelegate.swift in Sources */,
 				5C11B256222C67BD0053839B /* AccountListViewController.swift in Sources */,
 				5C41F7AA222D30A900EA5346 /* AccountPageViewController.swift in Sources */,
+				5C2B1AFD223139F100983C11 /* AccountManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +416,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5CBD3F01222F2E63005BABD7 /* AccountsData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5CBD3F02222F2E63005BABD7 /* AccountsData.xcdatamodel */,
+			);
+			currentVersion = 5CBD3F02222F2E63005BABD7 /* AccountsData.xcdatamodel */;
+			path = AccountsData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5C749FCA222C011300E470EC /* Project object */;
 }
