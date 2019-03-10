@@ -21,6 +21,8 @@ class AccountPageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController!.setNavigationBarHidden(false, animated: false)
+        
         dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MM/dd/yyyy"
         

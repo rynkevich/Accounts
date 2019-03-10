@@ -34,6 +34,8 @@ class CreateAccountViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController!.setNavigationBarHidden(false, animated: false)
+        
         dateFormatter = DateFormatter()
         dateFormatter!.dateFormat = "MM/dd/yyyy"
         accountManager = AccountManager((UIApplication.shared.delegate as! AppDelegate).persistentContainer)

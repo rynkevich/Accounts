@@ -17,6 +17,8 @@ class AccountListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController!.setNavigationBarHidden(false, animated: false)
+        
         initializeAvatarImageView()
         
         accountManager = AccountManager((UIApplication.shared.delegate as! AppDelegate).persistentContainer)
