@@ -65,7 +65,7 @@ class AccountListViewController: UIViewController {
     
     private func initializeAvatarImageView() {
         accountButton.layer.borderColor = UIColor.white.cgColor
-        accountButton.layer.borderWidth = 1
+        accountButton.layer.borderWidth = 1.5
         accountButton.layer.cornerRadius = accountButton.frame.width / 2
         accountButton.clipsToBounds = true
     }

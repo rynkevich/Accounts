@@ -50,7 +50,7 @@ class AccountPageViewController: UIViewController {
     
     private func initializeAvatarImageView() {
         avatarImageView.layer.borderColor = UIColor.white.cgColor
-        avatarImageView.layer.borderWidth = 1
+        avatarImageView.layer.borderWidth = 1.5
         avatarImageView.layer.cornerRadius = avatarImageView.frame.width / 2
         avatarImageView.clipsToBounds = true
     }

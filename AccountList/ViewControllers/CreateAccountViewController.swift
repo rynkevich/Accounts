@@ -115,7 +115,7 @@ class CreateAccountViewController: UIViewController {
     
     private func initializeAvatarButton() {
         avatarButton.layer.borderColor = UIColor.white.cgColor
-        avatarButton.layer.borderWidth = 1
+        avatarButton.layer.borderWidth = 1.5
         avatarButton.layer.cornerRadius = avatarButton.frame.width / 2
         avatarButton.clipsToBounds = true
     }
