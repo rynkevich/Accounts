@@ -27,6 +27,7 @@ class AccountPageViewController: UIViewController {
         dateFormatter.dateFormat = "MM/dd/yyyy"
         
         initializeAvatarImageView()
+        initializeBioTextView()
         
         setFields(toAccountData: currentAccount)
     }
@@ -53,6 +54,11 @@ class AccountPageViewController: UIViewController {
         avatarImageView.layer.borderWidth = 1.5
         avatarImageView.layer.cornerRadius = avatarImageView.frame.width / 2
         avatarImageView.clipsToBounds = true
+    }
+    
+    private func initializeBioTextView() {
+        bioTextView.textContainerInset = .zero
+        bioTextView.textContainer.lineFragmentPadding = 0
     }
     
     private func setFields(toAccountData account: AccountManagedObject) {
