@@ -22,6 +22,9 @@ class SignInViewController : UIViewController {
         
         super.viewWillAppear(animated)
         
+        emailField.text = ""
+        passwordField.text = ""
+        
         navigationController!.setNavigationBarHidden(true, animated: false)
     }
     
