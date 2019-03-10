@@ -12,6 +12,7 @@ class AccountPageViewController: UIViewController {
     @IBOutlet weak var dateOfBirthOutputLabel: UILabel!
     @IBOutlet weak var countryOutputLabel: UILabel!
     @IBOutlet weak var bioTextView: UITextView!
+    @IBOutlet weak var bioTextViewHeightConstraint: NSLayoutConstraint!
     
     private let notSpecifiedPlaceholder = "<None>"
     private var dateFormatter: DateFormatter!
@@ -30,6 +31,8 @@ class AccountPageViewController: UIViewController {
         initializeBioTextView()
         
         setFields(toAccountData: currentAccount)
+        
+        updateBioTextViewHeight()
     }
     
     @IBAction func deleteButtonTapped(_ sender: Any) {
@@ -59,6 +62,10 @@ class AccountPageViewController: UIViewController {
     private func initializeBioTextView() {
         bioTextView.textContainerInset = .zero
         bioTextView.textContainer.lineFragmentPadding = 0
+    }
+    
+    private func updateBioTextViewHeight() {
+        bioTextViewHeightConstraint.constant = bioTextView.contentSize.height + 10
     }
     
     private func setFields(toAccountData account: AccountManagedObject) {
