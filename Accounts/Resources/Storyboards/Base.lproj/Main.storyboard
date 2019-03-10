@@ -13,8 +13,8 @@
         <!--Sign In-->
         <scene sceneID="76P-rh-DMT">
             <objects>
-                <viewController id="uxB-ug-aKL" userLabel="Sign In" customClass="SignInViewController" customModule="AccountList" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="aPJ-3f-w8E" userLabel="Sign In" customClass="GradientBackgroundView" customModule="AccountList">
+                <viewController id="uxB-ug-aKL" userLabel="Sign In" customClass="SignInViewController" customModule="Accounts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aPJ-3f-w8E" userLabel="Sign In" customClass="GradientBackgroundView" customModule="Accounts" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -124,8 +124,8 @@
         <!--Create Account View Controller-->
         <scene sceneID="vlw-rd-0Qs">
             <objects>
-                <viewController id="sID-li-Di8" customClass="CreateAccountViewController" customModule="AccountList" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="UdK-k4-VqZ" userLabel="Create Account View" customClass="GradientBackgroundView" customModule="AccountList" customModuleProvider="target">
+                <viewController id="sID-li-Di8" customClass="CreateAccountViewController" customModule="Accounts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UdK-k4-VqZ" userLabel="Create Account View" customClass="GradientBackgroundView" customModule="Accounts" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="650"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -479,8 +479,8 @@
         <!--Account Page View Controller-->
         <scene sceneID="Pda-L5-K6Q">
             <objects>
-                <viewController id="NDf-AT-S7K" userLabel="Account Page View Controller" customClass="AccountPageViewController" customModule="AccountList" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="woJ-le-4E4" userLabel="Account Page View" customClass="GradientBackgroundView" customModule="AccountList" customModuleProvider="target">
+                <viewController id="NDf-AT-S7K" userLabel="Account Page View Controller" customClass="AccountPageViewController" customModule="Accounts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="woJ-le-4E4" userLabel="Account Page View" customClass="GradientBackgroundView" customModule="Accounts" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="650"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -748,8 +748,8 @@
         <!--Account List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="Account List View Controller" customClass="AccountListViewController" customModule="AccountList" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="Account List View" customClass="GradientBackgroundView" customModule="AccountList" customModuleProvider="target">
+                <viewController id="BYZ-38-t0r" userLabel="Account List View Controller" customClass="AccountListViewController" customModule="Accounts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="Account List View" customClass="GradientBackgroundView" customModule="Accounts" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -891,6 +891,6 @@
         <image name="NoImage" width="624" height="624"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kg1-1z-69c"/>
+        <segue reference="bMg-HW-XdV"/>
     </inferredMetricsTieBreakers>
 </document>
