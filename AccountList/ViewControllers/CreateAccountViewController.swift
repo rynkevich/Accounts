@@ -47,12 +47,12 @@ class CreateAccountViewController: UIViewController {
         initializeCountryPickerView()
         
         if isLoggedIn {
-            emailField.isEnabled = false
             personalDataSwitch.isHidden = true
             personalDataLabel.isHidden = true
             doneButton.isEnabled = true
             
             if currentAccount != nil {
+                emailField.isEnabled = false
                 setFields(toAccountData: currentAccount!)
             }
         }
