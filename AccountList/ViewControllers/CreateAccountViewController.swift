@@ -73,21 +73,21 @@ class CreateAccountViewController: UIViewController {
     @IBAction func doneButtonTapped(_ sender: UIBarButtonItem) {
         let validationResult = AccountValidator.validateAccountFields(in: self, isEditing: currentAccount != nil)
         if validationResult != nil {
-            present(ErrorAlertFactory.getAlert(title: "Validation error", message: validationResult!), animated: true)
+            present(ErrorAlertFactory.getAlert(title: "Error", message: validationResult!), animated: true)
             return
         }
         
         if currentAccount == nil || emailField.text! != currentAccount!.email {
             if try! !accountManager.isUniqueEmail(emailField.text!) {
                 present(ErrorAlertFactory.getAlert(
-                    title: "Validation error", message: "User with specified email already exists"), animated: true)
+                    title: "Error", message: "User with specified email already exists"), animated: true)
                 return
             }
         }
         if currentAccount == nil || usernameField.text! != currentAccount!.username {
             if try! !accountManager.isUniqueUsername(usernameField.text!) {
                 present(ErrorAlertFactory.getAlert(
-                    title: "Validation error", message: "User with specified name already exists"), animated: true)
+                    title: "Error", message: "User with specified name already exists"), animated: true)
                 return
             }
         }

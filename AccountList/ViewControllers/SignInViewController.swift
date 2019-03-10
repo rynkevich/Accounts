@@ -38,12 +38,12 @@ class SignInViewController : UIViewController {
         switch identifier {
         case "showAccountsSegue":
             if emailField.text!.isEmpty {
-                present(ErrorAlertFactory.getAlert(title: "Validation error", message: "Email is not specified"),
+                present(ErrorAlertFactory.getAlert(title: "Error", message: "Email is not specified"),
                        animated: true)
                 return false
             }
             if passwordField.text!.isEmpty {
-                present(ErrorAlertFactory.getAlert(title: "Validation error", message: "Password is not specified"),
+                present(ErrorAlertFactory.getAlert(title: "Error", message: "Password is not specified"),
                         animated: true)
                 return false
             }
@@ -56,9 +56,11 @@ class SignInViewController : UIViewController {
                 UserDefaults.standard.set(emailField.text!, forKey: "currentUser")
                 return true
             } else {
-                 present(ErrorAlertFactory.getAlert(title: "Authentication error",
-                                                    message: "Incorrect email or password specified"),
-                         animated: true)
+                 present(
+                    ErrorAlertFactory.getAlert(
+                        title: "Authentication error",
+                        message: "Incorrect email or password specified"),
+                    animated: true)
                 return false
             }
         default:
