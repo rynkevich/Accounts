@@ -20,6 +20,7 @@
 		5C749FDD222C011400E470EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C749FDC222C011400E470EC /* Assets.xcassets */; };
 		5C749FE0222C011400E470EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C749FDE222C011400E470EC /* LaunchScreen.storyboard */; };
 		5CBD3F03222F2E63005BABD7 /* AccountsData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5CBD3F01222F2E63005BABD7 /* AccountsData.xcdatamodeld */; };
+		5CF48FE422364918008A792F /* KeyboardHiding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF48FE322364918008A792F /* KeyboardHiding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		5C749FDF222C011400E470EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C749FE1222C011400E470EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CBD3F02222F2E63005BABD7 /* AccountsData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AccountsData.xcdatamodel; sourceTree = "<group>"; };
+		5CF48FE322364918008A792F /* KeyboardHiding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHiding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 		5C749FD4222C011300E470EC /* Accounts */ = {
 			isa = PBXGroup;
 			children = (
+				5CF48FE222364893008A792F /* Extensions */,
 				5C30379422348031000FA38A /* Validation */,
 				5C2B1AFB2231396700983C11 /* Utilities */,
 				5C41F7A4222D299100EA5346 /* Views */,
@@ -134,6 +137,14 @@
 				5C749FE1222C011400E470EC /* Info.plist */,
 			);
 			path = Accounts;
+			sourceTree = "<group>";
+		};
+		5CF48FE222364893008A792F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5CF48FE322364918008A792F /* KeyboardHiding.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CF48FE422364918008A792F /* KeyboardHiding.swift in Sources */,
 				5C41F7A6222D2A2D00EA5346 /* GradientBackgroundView.swift in Sources */,
 				5CBD3F03222F2E63005BABD7 /* AccountsData.xcdatamodeld in Sources */,
 				5C11B25B222C86110053839B /* SignInViewController.swift in Sources */,

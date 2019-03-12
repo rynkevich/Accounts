@@ -22,6 +22,7 @@ class AccountPageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        hideKeyboardOnTap()
         navigationController!.setNavigationBarHidden(false, animated: false)
         
         dateFormatter = DateFormatter()

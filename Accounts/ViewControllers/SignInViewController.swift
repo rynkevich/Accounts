@@ -11,6 +11,8 @@ class SignInViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        hideKeyboardOnTap()
+        
         accountManager = AccountManager((UIApplication.shared.delegate as! AppDelegate).persistentContainer)
     }
     
