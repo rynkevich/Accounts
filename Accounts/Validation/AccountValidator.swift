@@ -2,6 +2,8 @@ import Foundation
 
 class AccountValidator {
     
+    // TODO?: Account model and model specific validator instead of this temporary solution
+    
     static func validateAccountFields(in vc: CreateAccountViewController, isEditing: Bool) -> String? {
         if vc.emailField.text!.isEmpty { return "Email is not specified" }
         if !isEditing && vc.passwordField.text!.isEmpty { return "Password is not specified" }
